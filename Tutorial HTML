@@ -1,0 +1,228 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta name="language" content="spanish" />
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="colorines.css">
+	
+	
+	<title>Tutorial HTML</title>
+</head>
+<body>
+
+<header>
+	<center>
+	<h1>Tuatorial HTML</h1>
+	<p>Introducción al HTMl.</p>
+	</center>
+	<p>Temas:</p>
+	<ul>
+		<li><a href="#apartado1">¿Qué es HTML?</a></li>
+		<li><a href="#apartado2">Esquema Básico</a></li>
+		<li><a href="#apartado3">Formato</a></li>
+		<li><a href="#apartado4">Elementos</a></li>
+		<li><a href="#apartado5">Atributos</a></li>
+		<li><a href="#apartado6">Encabezamientos</a></li>
+		<li><a href="#apartado7">Agrupación</a></li>
+		<li><a href="#apartado8">Imagenes</a></li>
+		<li><a href="#apartado9">Enlaces</a></li>
+		<li><a href="#apartado10">Resalto</a></li>
+	</ul>
+	<center><img src="portada.jpg"></center>
+</header>
+	
+<section>
+	<article id="apartado1">
+		<center><h2>¿Qué es HTML?</h2></center>
+<pre>
+HTML es el lenguaje de marcado estándar para la creación de páginas Web.
+
+HTML significa Hyper Text Markup Language
+HTML describe la estructura de las páginas Web usando el marcado
+Elementos HTML son los bloques de construcción de páginas HTML
+Elementos HTML están representados por etiquetas
+HTML etiquetas de la etiqueta de piezas de contenido, tales como "mesa" "la partida", "párrafo", y así sucesivamente
+Los navegadores no muestran las etiquetas HTML, pero los utilizan para representar el contenido de la página
+
+
+</pre>
+
+</article>
+	<article id="apartado2">
+		<center><h2>Esquema Básico</h2></center>
+<center><img src="ejemplobasico.png"></center>
+<pre>
+	
+La &lt!DOCTYPE html&gt Declaración indica que este documento sea HTML5
+El&lthtml&gt Elemento es el elemento raíz de una página HTML
+El &lthead&gt Elemento contiene información de metadatos sobre el documento
+El &lttitle&gt Elemento especifica un título para el documento
+El &ltbody&gt Elemento contiene el contenido de la página visible
+El &lth1&gt Elemento define un gran encabezado
+El &lp&gt Elemento define un párrafo
+
+</pre>
+	</article>
+	<article id="apartado3">
+		<center><h2>Formato</h2></center>
+
+		<h4>Tipor de documento:</h4>
+			<div>
+				<p>	&lt !doctyp html &gt</p>
+			</div>
+		<h4>Formato etiqueta:</h4>
+		<div>
+			<p>	&lt elemento &gt</p>
+		</div>
+		<h4>Etiqueta de cierre vs. Elemento vacío:</h4>
+		<div>
+			<p>	&lt /elemento &gt</p>
+		</div>
+		<h4>Atributos:</h4>
+		<div>
+			<p>	&lt elto atributo=“valor” &gt &lt /elto &gt</p>
+		</div>
+	</article>
+	<article id="apartado4">
+		<center><h2>Elementos</h2></center>
+<pre>
+Un elemento HTML por lo general consiste en un inicio la etiqueta y el extremo etiqueta,
+con el contenido insertado en el medio:
+</pre>
+
+ <p> &lt Tagname &gt contenido va aquí ... &lt / nombre de etiqueta &gt </p>
+
+<h3>Elementos anidados</h3>
+<pre>
+Los elementos HTML se pueden anidar (elementos pueden contener elementos)
+Todos los documentos HTML se componen de elementos HTML anidadas
+El elemento de contenido es otros dos elementos HTML:
+</pre>
+<center><img src="Anidación elementos.png"></center>
+<h3>Elementos vacíos</h3>
+<pre>
+Son elementos que no poseen ningún contenido
+&ltbr&gt es un elemento vacío y sin una etiqueta de cierre (la Red etiqueta define un salto de línea)
+Los elementos vacíos pueden ser "cerrados" en la etiqueta de apertura de esta manera: &ltbr /&gt
+HTML5 no requiere que los elementos vacíos sean cerrados, pero si lo permite
+</pre>
+	</article>
+	<article id="apartado5">
+	<center><h2>Atributos</h2></center>	
+<pre>
+Todos los elementos HTML pueden tener atributos
+Los atributos proporcionan información adicional acerca de un elemento
+Los atributos siempre se especifican en la etiqueta de inicio
+Los atributos por lo general vienen en pares de nombre / valor como: nombre = "valor"
+</pre>
+<center><img src="Atributo.png"></center>
+	</article>
+	<article id="apartado6">
+		<center><h2>Encabezamientos</h2></center>
+<p>Se definen con la etiqueta &lth1&gt a &lth6&gt etiquetas</p>
+<center><img src="enc.png"></center>
+<center><img src="encabezamientos.png"></center>
+	</article>
+	<article id="apartado7">
+		<center><h2>Agrupación</h2></center>
+<h3>Parrafos</h3>
+<pre>
+&ltp&gtEste texto pertenece a un párrafo&lt/p&gt
+&ltp&gtPero éste es del párrafo siguiente&lt/p&gt</pre>
+<h3>Texto preformateado</h3>
+<pre>
+&ltpre&gt
+Este texto aparecerá
+	escrito en el navegador con este mismo formato
+			utilizando un tipo de letra monoespaciada.
+&lt/pre&gt
+</pre>
+	</article>
+
+<article id="apartado8">
+		<center><h2>Imagenes</h2></center>
+<pre>
+En HTML, las imágenes se definen con el &ltimg&gt etiqueta
+La etiqueta &ltimg&gt es vacío, contiene atributos solamente, y no tiene una etiqueta de cierre
+El atributo src especifica el URL (dirección web) de la imagen:
+</pre>
+<center><img src="img.png"></center>
+<h3>El atributo alt</h3>
+<pre>
+El atributo alt proporciona un texto alternativo para una imagen, si el usuario por alguna razón no
+puede verla (debido a la conexión lenta, un error en el atributo src, o si el usuario utiliza un
+lector de pantalla)
+</pre>
+<h3>Tamaño de la imagen</h3>
+<pre>
+Se puede utilizar el estilo de atributo para especificar el ancho y la altura de una imagen, cuyos
+valores están en pixeles:
+</pre>
+<center><img src="img tam.png"></center>
+	</article>
+
+<article id="apartado9">
+		<center><h2>Enlaces</h2></center>
+<pre>
+Los enlaces HTML son hipervínculos
+Puede hacer clic en un vínculo y saltar a otro documento
+Al mover el ratón sobre un enlace, el puntero del ratón se convertirá en una pequeña mano
+Nota: Un enlace no tiene que ser un texto. Puede ser una imagen o cualquier otro elemento HTML
+</pre>
+<h3>Sintaxis</h3>
+<pre>
+En HTML, enlaces se definen con la etiqueta &lta&gt
+El href atributo especifica la dirección de destino del enlace
+El texto del enlace es la parte visible
+Al hacer clic en el texto del enlace le enviará a la dirección especificada
+</pre>
+<center><img src="a.png"></center>
+<h3>Enlaces locales</h3>
+<pre>
+Un enlace local (enlace al mismo sitio web) se especifica con una URL relativa 
+(sin http: // www ....)
+</pre>
+<center><img src="loc.png"></center>
+	</article>
+
+<article id="apartado10">
+		<center><h2>Resalto</h2></center>
+<h3>Negrita</h3>
+<pre>
+&ltp&gtEn este párrafo hay una palabra
+que aparece en &ltb&gtnegrita&lt/b&gt.&lt/p&gt
+</pre>
+<h3>Subrayada</h3>
+<pre>
+&ltp&gtY la palabra &ltu&gtsubrayada&lt/u&gt es la que
+podemos ver en este párrafo.&lt/p&gt
+</pre>
+<h3>Bastardilla</h3>
+<pre>
+&ltp&gtEste párrafo contiene una palabra en cursiva en su interior: la
+escribimos con el símbolo de &lti&gtitálica&lt/i&gt.&lt/p&gt
+</pre>
+
+
+
+
+
+	</article>
+
+
+
+
+
+
+
+
+</section>
+</body>
+</html> 
+
+
+
+
+
+
+  
